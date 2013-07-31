@@ -15,6 +15,10 @@ run_list [
 
   "recipe[redisio::install]",
   "recipe[redisio::enable]",
+  "recipe[nodejs]",
+#  "recipe[nodejs::npm]",
+  "recipe[phantomjs::default]",
+  "recipe[sphinxsearch]"
 ]
 
 default_attributes(

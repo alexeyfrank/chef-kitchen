@@ -5,16 +5,20 @@ cookbook 'apt'
 cookbook 'postgresql'
 cookbook 'mysql'
 cookbook 'database'
+cookbook 'nodejs'
 
 cookbook 'perl'
 cookbook 'redisio'
 cookbook 'users'
 cookbook 'zsh'
+cookbook 'phantomjs'
 
 cookbook 'nginx', '~> 0.101.5'
 
 cookbook 'locale',
   :git => 'git://github.com/deepak/chef-locale.git', :branch => "deepak/bugfix/set-language"
+
+cookbook 'sphinxsearch', git: 'git://github.com/devops-israel/chef-sphinxsearch.git'
 
 cookbook 'rvm',
   # Use this fork because original have no autolibs support
