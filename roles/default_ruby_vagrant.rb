@@ -7,8 +7,8 @@ run_list [
   "recipe[locale]",
   "recipe[nginx]",
 
-  "recipe[postgresql::server]",
-  "recipe[postgresql::ruby]",
+#  "recipe[postgresql::server]",
+#  "recipe[postgresql::ruby]",
 
   "recipe[mysql::server]",
   "recipe[mysql::ruby]",
@@ -18,7 +18,9 @@ run_list [
   "recipe[nodejs]",
 #  "recipe[nodejs::npm]",
   "recipe[phantomjs::default]",
-  "recipe[sphinxsearch]"
+  "recipe[sphinxsearch]",
+  "recipe[imagemagick]",
+  "recipe[imagemagick::devel]"
 ]
 
 default_attributes(
